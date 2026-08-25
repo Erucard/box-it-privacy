@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Box-It — Privacy Policy</title>
+<style>
+  :root{
+    --paper:#ffffff; --ink:#121212; --mute:#6b6456;
+    --rule:#e3e3e0; --gold:#f7da21; --goldink:#b0890f;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --paper:#16161c; --ink:#f2f2ef; --mute:#9a958a; --rule:#2c2c34; }
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--paper); color:var(--ink);
+    font-family:"Libre Franklin","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight:500; line-height:1.62; -webkit-text-size-adjust:100%;
+  }
+  .wrap{max-width:44rem; margin:0 auto; padding:3.5rem 1.5rem 6rem}
+  .mark{
+    width:74px;height:74px;border-radius:16px;background:var(--ink);
+    color:var(--gold);display:flex;align-items:center;justify-content:center;
+    font-size:44px;font-weight:700;letter-spacing:-.02em;margin-bottom:1.6rem;
+  }
+  h1{font-size:2.5rem;line-height:1.1;letter-spacing:-.02em;margin:0 0 .4rem}
+  .rule{width:74px;height:6px;background:var(--gold);border-radius:3px;margin:1.4rem 0 1.1rem}
+  .updated{color:var(--mute);font-size:.9rem;margin:0 0 2.6rem}
+  h2{font-size:1.3rem;letter-spacing:-.01em;margin:2.8rem 0 .7rem}
+  p,li{font-size:1.02rem}
+  a{color:var(--ink);text-decoration-color:var(--gold);text-underline-offset:3px;
+    text-decoration-thickness:2px}
+  .lede{
+    border-left:4px solid var(--gold); padding:.2rem 0 .2rem 1.1rem; margin:0 0 1rem;
+    font-size:1.1rem;
+  }
+  .tablewrap{overflow-x:auto; margin:1rem 0}
+  table{border-collapse:collapse;width:100%;min-width:26rem}
+  th,td{text-align:left;padding:.6rem .8rem;border-bottom:1px solid var(--rule);
+        font-size:.97rem;vertical-align:top}
+  th{font-weight:700;white-space:nowrap}
+  td:first-child{white-space:nowrap;font-weight:600}
+  footer{margin-top:3.5rem;padding-top:1.4rem;border-top:1px solid var(--rule);
+         color:var(--mute);font-size:.87rem}
+  code{background:var(--rule);padding:.1rem .35rem;border-radius:4px;font-size:.9em}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="mark">8</div>
+  <h1>Privacy Policy</h1>
+  <div class="rule"></div>
+  <p class="updated">Box-It &middot; Last updated 21 August 2026</p>
+
+  <p class="lede">Box-It stores your progress on your own device. The app has no
+  servers, makes no network requests, and has no way to identify you.</p>
+
+  <p>Box-It is a single-player maths puzzle game published by
+  <strong>[YOUR NAME OR COMPANY]</strong> (&ldquo;we&rdquo;, &ldquo;us&rdquo;).
+  Questions: <a href="mailto:realoblivion2017@gmail.com">realoblivion2017@gmail.com</a>.</p>
+
+  <h2>What we store on your device</h2>
+  <p>The app writes one save file to your device&rsquo;s private app storage:</p>
+  <div class="tablewrap">
+  <table>
+    <tr><th>Stored</th><th>Example</th></tr>
+    <tr><td>Level progress</td><td>highest level reached, stars and best score per level</td></tr>
+    <tr><td>Lives</td><td>how many remain, and when the next one regenerates</td></tr>
+    <tr><td>Settings</td><td>sound on/off, vibration on/off, volume level</td></tr>
+    <tr><td>Cosmetics</td><td>which board themes you own and which is active</td></tr>
+    <tr><td>Statistics</td><td>levels completed, best chain length, best endless score</td></tr>
+  </table>
+  </div>
+  <p>This file never leaves your device. We cannot read it. Deleting the app
+  deletes it. There is no account, no login and no cloud backup &mdash; which also
+  means progress does not transfer to a new device.</p>
+
+  <h2>What we do not collect</h2>
+  <p>We do not collect your name, email address, phone number, contacts, photos,
+  files, precise or coarse location, or any advertising identifier. The app
+  requests no runtime permissions, and uses no cookies or analytics.</p>
+
+  <h2>Children</h2>
+  <p>Box-It is suitable for all ages and is not directed at any specific age
+  group. Because the app collects no personal information at all, no information
+  is knowingly collected from children.</p>
+
+  <h2>Your rights</h2>
+  <p>Because nothing is collected or transmitted, there is no personal data for
+  us to access, correct, export or delete. Removing the app removes everything
+  the game has stored. Questions: <a href="mailto:realoblivion2017@gmail.com">realoblivion2017@gmail.com</a>.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If a future version adds advertising, purchases or analytics, this policy
+  will be updated <em>before</em> that version is released and the date above
+  will change.</p>
+
+  <footer>
+    Box-It &middot; <a href="mailto:realoblivion2017@gmail.com">Contact support</a>
+  </footer>
+</div>
+<!--
+  DEPLOY: repo Settings > Pages > Source: "Deploy from a branch",
+  branch = main, folder = /docs. The published URL is then
+  https://<user>.github.io/<repo>/ and THAT is the URL that goes in
+  PRIVACY_URL (scripts/ui/settings_dialog.gd) and in both store listings.
+
+  BEFORE SHIPPING ADS/IAP/ANALYTICS: replace the "What we do not collect"
+  section using the commented block in docs/privacy-policy.md. Those claims
+  become false the moment an ads SDK ships.
+-->
+</body>
+</html>
